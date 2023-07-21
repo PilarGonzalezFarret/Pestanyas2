@@ -5,12 +5,12 @@ function NavTab() {
         {
             text: 'Inicio',
             content: "Welcome to our page!",
-            selected: false
+            selected: true
         },
         {
             text: 'Misión y Visión',
             content: "Those are our mision and vision.",
-            selected: true
+            selected: false
         },
         {
             text: 'Sobre nosotros',
@@ -31,7 +31,7 @@ function NavTab() {
                 return {
                     text: link.text,
                     content: link.content,
-                    selected: actual_index == ind_link
+                    selected: actual_index === ind_link
                 }
             }
         )
